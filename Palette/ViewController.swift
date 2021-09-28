@@ -10,11 +10,11 @@ import UIKit
 //MARK: - Outlets
 class ViewController: UIViewController {
 
-    @IBOutlet weak var screenColorView: UIView!
+    @IBOutlet weak var showTaskView: UIView!
     
-    @IBOutlet weak var redValueLabel: UILabel!
-    @IBOutlet weak var greenValueLabel: UILabel!
-    @IBOutlet weak var blueValueLabel: UILabel!
+    @IBOutlet weak var redLabel: UILabel!
+    @IBOutlet weak var greenLabel: UILabel!
+    @IBOutlet weak var blueLabel: UILabel!
     
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
@@ -24,31 +24,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        screenColorView.layer.cornerRadius = 15
+        showTaskView.layer.cornerRadius = 15
         
-        screenColorView.backgroundColor = UIColor(
+        showTaskView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1)
             
-            redValueLabel.text = String(format: "%.2f",redSlider.value)
-            greenValueLabel.text = String(format: "%.2f",greenSlider.value)
-            blueValueLabel.text = String(format: "%.2f",blueSlider.value)
+            redLabel.text = String(format: "%.2f",redSlider.value)
+            greenLabel.text = String(format: "%.2f",greenSlider.value)
+            blueLabel.text = String(format: "%.2f",blueSlider.value)
     }
 
 //MARK: - IBAction
     @IBAction func rgbSlider(_ sender: UISlider) {
-        screenColorView.backgroundColor = UIColor(
+        showTaskView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
         
-        redValueLabel.text = String(format: "%.2f",redSlider.value)
-        greenValueLabel.text = String(format: "%.2f",greenSlider.value)
-        blueValueLabel.text = String(format: "%.2f",blueSlider.value)
+        redLabel.text = String(format: "%.2f",redSlider.value)
+        greenLabel.text = String(format: "%.2f",greenSlider.value)
+        blueLabel.text = String(format: "%.2f",blueSlider.value)
         
     }
 

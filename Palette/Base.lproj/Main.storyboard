@@ -120,13 +120,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueLabel" destination="L8D-6P-zQ0" id="G5U-F0-7Wq"/>
                         <outlet property="blueSlider" destination="Z7P-mp-SkJ" id="AVB-xa-pUO"/>
-                        <outlet property="blueValueLabel" destination="L8D-6P-zQ0" id="G5U-F0-7Wq"/>
+                        <outlet property="greenLabel" destination="sDH-tC-h0b" id="CUj-Ub-g9A"/>
                         <outlet property="greenSlider" destination="FaL-P8-yTD" id="T2G-se-Kfr"/>
-                        <outlet property="greenValueLabel" destination="sDH-tC-h0b" id="CUj-Ub-g9A"/>
+                        <outlet property="redLabel" destination="H9j-au-fXL" id="XNe-nL-V7U"/>
                         <outlet property="redSlider" destination="O6S-r6-BOh" id="TjX-Lb-2jm"/>
-                        <outlet property="redValueLabel" destination="H9j-au-fXL" id="XNe-nL-V7U"/>
-                        <outlet property="screenColorView" destination="RDW-fZ-qNa" id="Ox6-3a-vgc"/>
+                        <outlet property="showTaskView" destination="RDW-fZ-qNa" id="Ox6-3a-vgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
