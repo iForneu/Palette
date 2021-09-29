@@ -7,7 +7,7 @@
 
 import UIKit
 
-//MARK: - Outlets
+// MARK: - Outlets
 class ViewController: UIViewController {
 
     @IBOutlet weak var showTaskView: UIView!
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-//MARK: - viewDidLoad
+// MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             blueLabel.text = String(format: "%.2f",blueSlider.value)
     }
 
-//MARK: - IBAction
+// MARK: - IBAction
     @IBAction func rgbSlider(_ sender: UISlider) {
         showTaskView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
